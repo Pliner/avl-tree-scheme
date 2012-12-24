@@ -62,7 +62,7 @@
           )
           ((= tree-factor -2) 
            (cond (
-                  (< (factor (left tree)) 0) (rotate-left-right tree))
+                  (> (factor (left tree)) 0) (rotate-left-right tree))
                   (else (rotate-left tree))            
             )
           )
